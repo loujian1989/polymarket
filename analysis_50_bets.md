@@ -531,20 +531,99 @@ This section requires the most conviction to trade against the market.
 
 ---
 
-## KALSHI MARKET SEARCH GUIDE
+## KALSHI LIVE MARKETS (Fetched via Authenticated API — May 30, 2026)
 
-Kalshi rate-limited during research. Manual search instructions:
+51 live markets found across thesis-relevant series. Data via `api.elections.kalshi.com`.
 
-| Category | Search Term | Expected Market Type |
-|----------|-------------|---------------------|
-| Alphabet earnings | `KXGOOG` or "Alphabet Q2 capital expenditures" | Quarterly CapEx exceed $X |
-| Micron earnings | `KXMIC` or "Micron fiscal Q3 revenue" | Revenue/margin thresholds |
-| NVIDIA price | `KXNVDA` or "NVIDIA market cap 4 trillion" | Market cap level |
-| Broadcom | `KXAVGO` or "Broadcom Q2 earnings" | Revenue/earnings beat |
-| OpenAI | "OpenAI valuation 2026" | Funding round price |
-| Semiconductor | "ASML net bookings" or "Lam Research revenue" | Earnings beats |
+### AI Coding Model Race (KXCODINGMODEL, closes Dec 31 2026)
 
-Kalshi URL: `https://kalshi.com/markets/?query=<term>`
+| Ticker | Outcome | YES | NO | ROI if YES |
+|--------|---------|-----|----|-----------|
+| KXCODINGMODEL-26DEC-ANTH | Anthropic has best coding model | $0.56 | $0.46 | 79% |
+| KXCODINGMODEL-26DEC-OPEN | OpenAI has best coding model | $0.27 | $0.74 | 270% |
+| KXCODINGMODEL-26DEC-GOOG | Google has best coding model | $0.06 | $0.95 | 1567% |
+| KXCODINGMODEL-26DEC-XAI | xAI has best coding model | $0.10 | $0.94 | 900% |
+| KXCODINGMODEL-26DEC-DEEP | Deepseek has best coding model | $0.01 | $1.00 | 9900% |
+| KXCODINGMODEL-26DEC-MOON | Moonshot AI has best coding model | $0.02 | $1.00 | 4900% |
+
+*Thesis link: Google memory constraints → model quality lags → lower probability for GOOG.*
+
+### OpenAI IPO Timeline (KXIPOOPENAI)
+
+| Ticker | Outcome | YES | NO | ROI if YES |
+|--------|---------|-----|----|-----------|
+| KXIPOOPENAI-26OCT01 | OpenAI IPOs by Oct 1 2026 | $0.59 | $0.42 | 69% |
+| KXIPOOPENAI-26NOV01 | OpenAI IPOs by Nov 1 2026 | $0.76 | $0.27 | 32% |
+| KXIPOOPENAI-26DEC01 | OpenAI IPOs by Dec 1 2026 | $0.82 | $0.21 | 22% |
+| KXIPOOPENAI-27JAN01 | OpenAI IPOs by Jan 1 2027 | $0.87 | $0.15 | 15% |
+| KXIPOOPENAI-27FEB01 | OpenAI IPOs by Feb 1 2027 | $0.91 | $0.16 | 10% |
+| KXIPOOPENAI-27MAR01 | OpenAI IPOs by Mar 1 2027 | $0.94 | $0.14 | 6% |
+| KXIPOOPENAI-27APR01 | OpenAI IPOs by Apr 1 2027 | $0.95 | $0.09 | 5% |
+| KXIPOOPENAI-27JUN01 | OpenAI IPOs by Jun 1 2027 | $0.95 | $0.08 | 5% |
+
+*Consensus: ~87% chance IPO by Jan 2027. Memory cost pressure could delay/depress valuation.*
+
+### Top-Ranked AI Model by 2027 (KXTOPAI-27-JAN01)
+
+| Ticker | Outcome | YES | NO | ROI if YES |
+|--------|---------|-----|----|-----------|
+| KXTOPAI-27-JAN01-OPEN | OpenAI top-ranked before 2027 | $0.51 | $0.50 | 96% |
+| KXTOPAI-27-JAN01-XAI | xAI top-ranked before 2027 | $0.24 | $0.81 | 317% |
+| KXTOPAI-27-JAN01-META | Meta top-ranked before 2027 | $0.23 | $0.80 | 335% |
+| KXTOPAI-27-JAN01-DEPP | Deepseek top-ranked before 2027 | $0.14 | $0.90 | 614% |
+| KXTOPAI-27-JAN01-BYTE | ByteDance top-ranked before 2027 | $0.13 | $0.96 | 669% |
+| KXTOPAI-27-JAN01-NVID | Nvidia top-ranked before 2027 | $0.09 | $0.93 | 1011% |
+
+### OpenAI vs Anthropic IPO Race (KXOAIANTH)
+
+| Ticker | Outcome | YES | NO | ROI if YES |
+|--------|---------|-----|----|-----------|
+| KXOAIANTH-40-OAI | OpenAI IPOs before Anthropic | $0.79 | $0.26 | 27% |
+| KXOAIANTH-40-ANTH | Anthropic IPOs before OpenAI | $0.29 | $0.74 | 245% |
+
+### Anthropic DoD Lawsuit (KXANTHROPICDOD)
+
+| Ticker | Outcome | YES | NO | ROI if YES |
+|--------|---------|-----|----|-----------|
+| KXANTHROPICDOD-28 | Anthropic wins Pentagon lawsuit | $0.52 | $0.51 | 92% |
+
+### NVIDIA H200 to China (KXH200CHINA)
+
+| Ticker | Outcome | YES | NO | ROI if YES |
+|--------|---------|-----|----|-----------|
+| KXH200CHINA-27-BEF | H200 chips delivered to China before 2027 | $0.86 | $0.20 | 16% |
+
+*Thesis link: China H200 access → more HBM demand → tighter supply globally → memory price spike.*
+
+### Broadcom Earnings Mentions (KXEARNINGSMENTIONAVGO-26JUN03, closes Sep 30 2026)
+
+| Ticker | What Broadcom mentions on earnings call | YES | ROI |
+|--------|----------------------------------------|-----|-----|
+| KXEARNINGSMENTIONAVGO-26JUN03-HYPE | "Hyperscaler" mentioned | $0.93 | 8% |
+| KXEARNINGSMENTIONAVGO-26JUN03-TOMA | "TomasBravo" mentioned | $0.83 | 20% |
+| KXEARNINGSMENTIONAVGO-26JUN03-ANTH | "Anthropic" mentioned | $0.80 | 25% |
+| KXEARNINGSMENTIONAVGO-26JUN03-OPENA | "OpenAI" mentioned | $0.77 | 30% |
+| KXEARNINGSMENTIONAVGO-26JUN03-META | "Meta" mentioned | $0.77 | 30% |
+| KXEARNINGSMENTIONAVGO-26JUN03-COMP | "Competition/competitive" mentioned | $0.51 | 96% |
+| KXEARNINGSMENTIONAVGO-26JUN03-ACQU | "Acquisition" mentioned | $0.37 | 170% |
+| KXEARNINGSMENTIONAVGO-26JUN03-OPTI | "Optical" mentioned | $0.34 | 194% |
+| KXEARNINGSMENTIONAVGO-26JUN03-ORGA | "Organic growth" mentioned | $0.34 | 194% |
+| KXEARNINGSMENTIONAVGO-26JUN03-OPEN | "Open source" mentioned | $0.28 | 257% |
+| KXEARNINGSMENTIONAVGO-26JUN03-QUAN | "Quantum" mentioned | $0.26 | 285% |
+| KXEARNINGSMENTIONAVGO-26JUN03-DEPA | "DOGE/Department" mentioned | $0.27 | 270% |
+| KXEARNINGSMENTIONAVGO-26JUN03-NVLI | "NVLink" mentioned | $0.30 | 233% |
+
+*Thesis link: Broadcom is a direct HBM/AI infrastructure beneficiary. "Hyperscaler" mention near-certain (93%); look for "optical" (34%) as a contrarian signal for memory alternatives.*
+
+### Thesis-Mapped Kalshi Opportunities
+
+| Bet Group | Best Kalshi Play | YES Price | ROI | Thesis Alignment |
+|-----------|-----------------|-----------|-----|-----------------|
+| I (Google CapEx) | KXEARNINGSMENTIONAVGO-26JUN03-HYPE | $0.93 | 8% | Hyperscalers = memory demand surge |
+| II (AI Delays) | KXCODINGMODEL-26DEC-GOOG | $0.06 | 1567% | Google model lags → low coding market share |
+| III (Memory stocks) | KXH200CHINA-27-BEF | $0.86 | 16% | H200 to China → HBM demand spike |
+| IV (Packaging) | KXEARNINGSMENTIONAVGO-26JUN03-NVLI | $0.30 | 233% | NVLink = advanced packaging signal |
+| V (Unicorn stress) | KXANTHROPICDOD-28 | $0.52 | 92% | DoD revenue = Anthropic stays private |
 
 ---
 
@@ -560,4 +639,4 @@ Kalshi URL: `https://kalshi.com/markets/?query=<term>`
 
 ---
 
-*Data sourced from live Polymarket markets (May 30, 2026). Kalshi data unavailable due to rate limiting — verify manually. This is analysis only, not financial advice.*
+*Data sourced from live Polymarket and Kalshi markets (May 30, 2026) via authenticated APIs. 51 Kalshi markets fetched from api.elections.kalshi.com. This is analysis only, not financial advice.*
