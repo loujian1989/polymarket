@@ -1,5 +1,5 @@
-# 50-Bet Analysis: "Google Cannot Get Enough Memory" Thesis
-**Date**: May 30, 2026 | **Platforms**: Polymarket + Kalshi
+# Google Cannot Get Enough Memory — Kalshi Bet Analysis
+**Date**: May 30, 2026 | **Platform**: Kalshi | **Markets fetched**: 51 live
 
 ---
 
@@ -9,7 +9,9 @@
 
 **Causal chain**: HBM supply shortage → Google panic-buys at premium → CapEx surge → model scaling constrained → competitive disadvantage → memory suppliers capture pricing power → packaging bottleneck → AI unicorns face compute cost crunch → AI valuation bubble stress.
 
-**Upfront Assessment**: The thesis is **partially validated** by market data. Sections I, III, and IV have strong logical foundations. Sections II and V are largely **contradicted** by live Polymarket odds (May 30, 2026).
+**Note on numbers**: The thesis references "1800–1900亿" — this is RMB (Chinese yuan), not USD. 1,900亿 RMB ≈ $26B USD/quarter or ~$104B annually. Alphabet's actual 2026 CapEx guidance is ~$75–100B USD for the full year. Treat any thesis threshold citing "$195B USD" as a RMB/USD confusion.
+
+**Platform note**: Kalshi's available markets don't cover Google CapEx, Micron gross margins, or HBM contract prices directly. The 51 live markets cluster around AI model competition, OpenAI/Anthropic corporate events, and Broadcom earnings — all **downstream consequences** of the thesis. This analysis maps those proxies to the thesis chain.
 
 ---
 
@@ -17,626 +19,289 @@
 
 | Contract | Formula | Example |
 |----------|---------|---------|
-| Buy YES at $P | ROI = (1−P)/P × 100% | Buy YES at $0.54 → ROI = 85% if win |
-| Buy NO at $P_yes | NO costs (1−P_yes); ROI = P_yes/(1−P_yes) × 100% | Market at 88% → NO costs $0.12 → ROI = 633% if win |
-| Edge | (Your estimate − Market probability) × 100% | You think 75%, market says 54% → +21% edge |
+| Buy YES at $P | ROI = (1 − P) / P × 100% | YES at $0.54 → 85% ROI if win |
+| Buy NO at P_yes | NO costs (1 − P_yes); ROI = P_yes / (1 − P_yes) × 100% | YES = 88¢ → NO costs 12¢ → 633% ROI if win |
 
 ---
 
-## SECTION I: Google/Alphabet CapEx Surge (Bets 1–10)
+## Section I: AI Coding Model Race
 
-### Thesis Logic
-Memory scarcity forces Google to pay spot-market premiums to secure any available HBM/DRAM capacity. This directly inflates infrastructure CapEx beyond analyst models. Hyperscaler CapEx is already rising industry-wide (Amazon guided $190B+ for 2026), and a supply-shortage scenario compounds the upward bias.
+**Series**: `KXCODINGMODEL` | **Closes**: Dec 31, 2026 | **Question**: Which AI company will have the best coding model?
 
-**⚠️ Critical Note on Numbers**: The thesis references "1800–1900亿" — this is **RMB (Chinese yuan)**, not USD. Converting: 1,900亿 RMB ≈ **$26B USD per quarter** or ~$104B annually. Alphabet's actual 2026 CapEx guidance is approximately **$75–100B USD** for the full year. The "$195B USD" threshold in Bet 4 appears to be a RMB/USD confusion — treat all CapEx thresholds with caution.
+**Thesis link**: Memory constraints impair Google's ability to train and serve the largest models. If HBM shortage hits Google harder than its competitors, Google's coding model falls behind Anthropic, OpenAI, and xAI — all of which have more flexible compute procurement.
 
----
+**Market data**:
 
-### Bet 1–3: Alphabet Q2, Q3, Q4 CapEx Beats Consensus
-**Verdict**: ✅ STRONG
+| Ticker | Winner | YES | NO | ROI | Verdict |
+|--------|--------|-----|----|-----|---------|
+| KXCODINGMODEL-26DEC-ANTH | Anthropic | $0.56 | $0.46 | 79% | **Thesis supported — market leader** |
+| KXCODINGMODEL-26DEC-OPEN | OpenAI | $0.27 | $0.74 | 270% | Strong #2 — good value |
+| KXCODINGMODEL-26DEC-XAI | xAI | $0.10 | $0.94 | 900% | Speculative |
+| KXCODINGMODEL-26DEC-GOOG | Google | $0.06 | $0.95 | 1567% | Thesis: Google loses — market agrees at 94% |
+| KXCODINGMODEL-26DEC-MOON | Moonshot AI | $0.02 | $1.00 | 4900% | Lottery |
+| KXCODINGMODEL-26DEC-DEEP | Deepseek | $0.01 | $1.00 | 9900% | Lottery |
+| KXCODINGMODEL-26DEC-ALIB | Alibaba | $0.01 | $1.00 | 9900% | Lottery |
+| KXCODINGMODEL-26DEC-ZAI | Z.ai | $0.01 | $1.00 | 9900% | Lottery |
+| KXCODINGMODEL-26DEC-BAID | Baidu | $0.01 | $1.00 | 9900% | Lottery |
 
-**Logic**: Memory scarcity = panic buying at any price = higher-than-modeled CapEx each quarter. Analysts consistently underestimate hardware inflation during supply crunches. The precedent from 2022 GPU shortage shows hyperscalers overpaying 20–40% above list price.
+**Analysis**: The market already prices Google out of the coding race at 6% — thesis aligned but mostly priced in. The real opportunity is Anthropic (56%) vs OpenAI (27%). Anthropic's Claude models have led coding benchmarks since Claude 3.5 Sonnet; the memory thesis gives Anthropic an ongoing structural advantage over Google. OpenAI at 27% is the best value play if you believe they'll close the gap on Anthropic by year-end.
 
-| Platform | Market | Current Odds | Direction | Cost | ROI |
-|----------|--------|-------------|-----------|------|-----|
-| Polymarket | No direct Alphabet CapEx market found | — | — | — | — |
-| Kalshi | Search: `KXGOOG` or "Alphabet Q2 capex" | Check manually | YES | TBD | TBD |
-
-**Action**: Monitor Kalshi post-Q1 earnings for "Alphabet Q2 capital expenditures exceed $X" markets. Also check Polymarket after Q2 earnings release (late July 2026) — markets typically appear 2–4 weeks before earnings.
-
-**Position Size**: Medium (once market exists)
-
----
-
-### Bet 4: Alphabet 2026 Full-Year CapEx >$195B (USD)
-**Verdict**: ❌ WEAK / LIKELY WRONG THRESHOLD
-
-**Logic**: $195B USD is approximately **2× Alphabet's stated guidance** and larger than Amazon's entire CapEx. The thesis threshold appears to confuse RMB with USD. If the intended threshold is ~$100B USD (realistic range), the bet becomes STRONG. At $195B USD, this is nearly impossible.
-
-| Platform | Market | Current Odds | Direction | ROI |
-|----------|--------|-------------|-----------|-----|
-| Polymarket | None found | — | — | — |
-| Kalshi | None found | — | — | — |
-
-**Action**: Clarify the intended USD threshold. If ~$100B USD: BET YES. If truly $195B USD: SKIP.
-
-**Position Size**: Skip until threshold clarified
+**Recommended bets**:
+- **YES ANTH** at $0.56 — high conviction, 79% ROI, thesis strongly aligned
+- **YES OPEN** at $0.27 — medium conviction, 270% ROI, good if OpenAI releases coding-focused model
+- **Skip GOOG NO** — NO costs $0.94, ROI only 6%; already priced in
 
 ---
 
-### Bet 5: Wall Street Raises Alphabet Full-Year CapEx Estimates After Q2
-**Verdict**: ✅ STRONG
+## Section II: OpenAI IPO Timeline
 
-**Logic**: Q2 earnings call will reveal actual memory procurement costs. If CapEx beats, consensus models get revised upward — a near-automatic chain reaction. This happened with every hyperscaler in 2023–2024.
+**Series**: `KXIPOOPENAI` | **Question**: When will OpenAI IPO?
 
-| Platform | Market | Current Odds | Direction | ROI |
-|----------|--------|-------------|-----------|-----|
-| Polymarket | None direct | — | YES | — |
-| Kalshi | None direct | — | YES | — |
+**Thesis link**: Compute cost inflation from HBM scarcity tightens AI startup margins. OpenAI's IPO timing reflects both market appetite and internal pressure from investors to lock in valuation before compute cost crises compound. High YES prices on near-term dates = market expects IPO soon regardless of memory costs.
 
-**Action**: No tradeable market currently. Track via Bloomberg consensus revisions. Consider adjacent bet: "Alphabet stock down >5% on Q2 earnings" (analysts surprised by CapEx) if it appears on Polymarket.
+**Market data**:
 
----
+| Ticker | Deadline | YES | NO | ROI (YES) | ROI (NO) |
+|--------|---------|-----|----|-----------|---------|
+| KXIPOOPENAI-26JUN01 | Jun 1, 2026 | $0.01 | $1.00 | 9900% | 1% |
+| KXIPOOPENAI-26JUL01 | Jul 1, 2026 | $0.01 | $1.00 | 9900% | 1% |
+| KXIPOOPENAI-26AUG01 | Aug 1, 2026 | $0.04 | $0.97 | 2400% | 4% |
+| KXIPOOPENAI-26SEP01 | Sep 1, 2026 | $0.09 | $0.92 | 1011% | 10% |
+| KXIPOOPENAI-26OCT01 | Oct 1, 2026 | $0.59 | $0.42 | 69% | 140% |
+| KXIPOOPENAI-26NOV01 | Nov 1, 2026 | $0.76 | $0.27 | 32% | 281% |
+| KXIPOOPENAI-26DEC01 | Dec 1, 2026 | $0.82 | $0.21 | 22% | 390% |
+| KXIPOOPENAI-27JAN01 | Jan 1, 2027 | $0.87 | $0.15 | 15% | 580% |
+| KXIPOOPENAI-27FEB01 | Feb 1, 2027 | $0.91 | $0.16 | 10% | 569% |
+| KXIPOOPENAI-27MAR01 | Mar 1, 2027 | $0.94 | $0.14 | 6% | 671% |
+| KXIPOOPENAI-27APR01 | Apr 1, 2027 | $0.95 | $0.09 | 5% | 1056% |
+| KXIPOOPENAI-27MAY01 | May 1, 2027 | $0.95 | $0.10 | 5% | 950% |
+| KXIPOOPENAI-27JUN01 | Jun 1, 2027 | $0.95 | $0.08 | 5% | 1188% |
 
-### Bets 6–8: Google Cloud Cost of Revenue (CoR) Growth >15% Q-o-Q
-**Verdict**: ✅ MEDIUM-STRONG
+**Analysis**: The implied probability distribution peaks around Oct–Dec 2026. The market prices ~87% chance of IPO by Jan 1, 2027. This series is a probability ladder — each earlier date prices in a compressed window.
 
-**Logic**: Higher memory costs flow directly into Google Cloud's infrastructure costs. Cloud revenue growth at Google is ~28% YoY but cost inflation from memory premiums compresses margins. The 15% threshold is achievable.
+The thesis suggests compute cost pressure COULD delay IPO (investors nervous about unit economics) OR accelerate it (OpenAI needs public capital to fund compute). Market data leans heavily toward near-term IPO. The most interesting trade is **NO on the Oct 1 deadline** (NO at $0.41, ROI 140%) if you believe OpenAI's IPO is more likely in Q4 2026 than Q3.
 
-| Platform | Market | Current Odds | Direction | ROI |
-|----------|--------|-------------|-----------|-----|
-| Polymarket | None found | — | YES | — |
-| Kalshi | Search "Google Cloud revenue" or "Alphabet gross margin" | TBD | YES | TBD |
-
-**Action**: Search Kalshi for "Alphabet Q2/Q3 operating expenses" markets.
-
----
-
-### Bet 9: Alphabet 2026 Free Cash Flow Down >35% vs 2025
-**Verdict**: ❌ WEAK
-
-**Logic (against)**: Alphabet generated ~$70B FCF in 2025. A 35% decline = losing ~$24.5B. This requires CapEx to surge by ~$25B above 2025 levels AND revenue growth to stall simultaneously. Google's revenue model (advertising) is relatively insulated from hardware costs. Even in the worst memory scenario, Alphabet's FCF resilience is very high.
-
-**Revised probability**: ~10–15% (market would price this ~5–8% if it existed). Skip.
+**Recommended bets**:
+- **NO on KXIPOOPENAI-26OCT01** at $0.41 — 140% ROI if IPO slips past Oct 1. Medium conviction given Sep 1 is only 9%, suggesting Oct is the first realistic window.
+- **YES on KXIPOOPENAI-27JAN01** at $0.87 — low ROI (15%) but highest-probability "IPO happens" anchor. Suitable for capital preservation bets.
 
 ---
 
-### Bet 10: Google Invests $10B+ Directly in Semiconductor/Memory Company by Dec 31
-**Verdict**: ✅ MEDIUM
+## Section III: Top-Ranked AI Model Before 2027
 
-**Logic**: Google has already invested in Anthropic (AI), SambaNova (AI hardware), and CMC Magnetics. Memory security = existential strategic priority if shortage is real. Precedent: Microsoft invested in Mistral, various players pre-buying from Samsung.
+**Series**: `KXTOPAI-27-JAN01` | **Closes**: Jan 1, 2027 | **Question**: Which company will have the top-ranked AI model?
 
-| Platform | Market | Current Odds | Direction | ROI |
-|----------|--------|-------------|-----------|-----|
-| Polymarket | "Google x SpaceX data centers in space" (unrelated, 13% YES) | — | — | — |
-| Kalshi | None found | — | YES | — |
+**Thesis link**: Google's memory constraints limit frontier model quality. Competitors not facing the same HBM bottleneck (OpenAI via Azure, Anthropic via AWS/Google TPU) will hold the top AI ranking through end of 2026.
 
-**Action**: If this market appears, bet YES at 20–30¢ for 233–400% ROI.
+**Market data**:
 
----
+| Ticker | Company | YES | NO | ROI |
+|--------|---------|-----|----|-----|
+| KXTOPAI-27-JAN01-OPEN | OpenAI | $0.51 | $0.50 | 96% |
+| KXTOPAI-27-JAN01-XAI | xAI | $0.24 | $0.81 | 317% |
+| KXTOPAI-27-JAN01-META | Meta | $0.23 | $0.80 | 335% |
+| KXTOPAI-27-JAN01-ALIB | Alibaba | $0.16 | $0.88 | 525% |
+| KXTOPAI-27-JAN01-DEPP | Deepseek | $0.14 | $0.90 | 614% |
+| KXTOPAI-27-JAN01-BYTE | ByteDance | $0.13 | $0.96 | 669% |
+| KXTOPAI-27-JAN01-BAID | Baidu | $0.11 | $0.93 | 809% |
+| KXTOPAI-27-JAN01-NVID | Nvidia | $0.09 | $0.93 | 1011% |
+| KXTOPAI-27-JAN01-MIST | Mistral | $0.09 | $0.93 | 1011% |
+| KXTOPAI-27-JAN01-MOON | Moonshot AI | $0.09 | $0.96 | 1011% |
+| KXTOPAI-27-JAN01-ZAI | Z.ai | $0.09 | $0.95 | 1011% |
+| KXTOPAI-27-JAN01-01A1 | 01A1 | $0.09 | $0.95 | 1011% |
 
-## SECTION II: Google Model Release Delays (Bets 11–20)
+**Note**: Google is not listed as a market option — implying Kalshi already removed Google as a contender for top AI ranking by 2027. This is a direct thesis validation in market structure.
 
-### ⚠️ CRITICAL WARNING: SECTION II IS LARGELY CONTRADICTED BY LIVE DATA
+**Analysis**: OpenAI holds the plurality at 51%. The remaining 49% is split across 11 competitors. This is essentially a winner-take-all market where the individual probabilities sum to ~100% across all outcomes. The thesis is most consistent with OpenAI maintaining top rank (memory constraints suppress Google; OpenAI benefits from NVIDIA compute access via Microsoft Azure).
 
-Live Polymarket odds as of May 30, 2026:
-- **New Gemini reasoning flagship released by June 30**: **88% YES** — Google is actively releasing models
-- **Anthropic has best AI model June 2026**: **82%** — Google is LOSING the AI race, but because Anthropic is winning, NOT because Google is "stuck"
+xAI (Grok), Meta (Llama), and Alibaba (Qwen) are all viable at 14–24% — each represents a plausible scenario where an open-source or Chinese lab disrupts the leaderboard.
 
-The market consensus is: **Google keeps releasing models, but they're no longer the best**. The delay thesis is not supported.
-
----
-
-### Bet 11: Gemini 2 Ultra (Full Version) NOT Released by Dec 31
-**Verdict**: ❌ CONTRADICTED — But High-Risk Contrarian Play Available
-
-**Logic (against thesis)**: Gemini 2 reasoning flagship is already 88% likely by June 30 per market. By December 31, a full-year window makes this near-certain. The market essentially says: Google will release Gemini flags hip regardless of memory costs — they prioritize small/flash models alongside.
-
-| Platform | Market | Current Odds | Direction | Cost | ROI |
-|----------|--------|-------------|-----------|------|-----|
-| Polymarket | "New Gemini reasoning flagship released by June 30?" | YES **88%** | **NO** (contrarian) | $0.12 | **633%** |
-| Kalshi | None found | — | — | — | — |
-
-**Assessment**: Buying NO at 12¢ is a high-conviction contrarian bet. Requires strong belief that memory shortage will halt even partial model releases. **Recommendation**: Skip unless you have internal intelligence on Google's infrastructure state.
-
-**Position Size**: Tiny (1–2% of bankroll) if betting at all
+**Recommended bets**:
+- **YES OPEN** at $0.51 — 96% ROI, thesis aligned, OpenAI most likely to hold top rank
+- **YES XAI** at $0.24 — speculative 317% ROI if Elon's Grok surges on compute investment
+- **Skip Google** — Google not even on the market. Thesis fully reflected in market structure.
 
 ---
 
-### Bet 12: No 2T-Parameter Multimodal Flagship by Dec 31
-**Verdict**: ❌ WEAK
+## Section IV: OpenAI vs Anthropic IPO Race
 
-**Logic (against)**: Parameter counts are opaque — Google never discloses them publicly. This is fundamentally unverifiable and therefore unresolvable on Polymarket/Kalshi. Even if Google releases a smaller model, resolution disputes would arise.
+**Series**: `KXOAIANTH` | **Closes**: Jan 1, 2040 (long-dated)
 
-**Action**: Skip — not a tradeable thesis
+**Thesis link**: Compute cost inflation and memory shortages put pressure on AI unicorn fundraising timelines. The IPO order between OpenAI and Anthropic reflects which company has more capital runway and investor confidence despite rising infrastructure costs.
 
----
+**Market data**:
 
-### Bet 13: Google Does NOT Open Unlimited Multimodal to All Advanced Subscribers
-**Verdict**: ✅ MEDIUM (but no market)
-
-**Logic**: Usage limits are already standard across ALL AI providers including OpenAI and Anthropic. If memory costs surge, limits tighten. This is the most likely soft outcome — not a full product delay, but a quiet throttle.
-
-**Action**: No market found. Skip unless a specific "Google Gemini usage policy" market appears.
-
----
-
-### Bet 14: Next-Gen TPU (v7) Delayed at Google Developer Conference
-**Verdict**: ✅ MEDIUM
-
-**Logic**: TPUs require HBM stacked via 3D bonding — same supply chain bottleneck. If HBM shortage hits inference ASICs, TPU v7 production timeline slips. However, Google may have pre-ordered HBM specifically for TPUs (strategic allocation). This is plausible but not high-conviction.
-
-**Action**: No market found. Monitor Google I/O announcements (typically May-June).
-
----
-
-### Bet 15: Google H2 2026 AI Strategy Pivots to Flash/Nano (Small Models)
-**Verdict**: ✅ STRONG — Already Happening
-
-**Logic**: Gemini Flash and Nano are already Google's high-velocity releases. Resource constraints accelerate this trend. This is structural, not just a memory-shortage outcome. The evidence: Google's best math model (58% on Polymarket) is likely a distilled model beating on specific benchmarks.
-
-| Platform | Market | Direction | ROI |
-|----------|--------|-----------|-----|
-| Polymarket | No "small model pivot" market exists | — | — |
-| Kalshi | None | — | — |
-
-**Action**: No direct market. Use "Which company has best Math AI model June?" (Google 58%) as proxy — this reflects small model strength.
-
----
-
-### Bets 16–18: Gemini Ultra Falls Out of Top 3 in Arena Rankings by October
-**Verdict**: ✅ PARTIALLY ALREADY HAPPENED
-
-| Platform | Market | Current Odds | Notes |
-|----------|--------|-------------|-------|
-| Polymarket | "Which company has best AI model end of June?" | Google **14%** | Google is ALREADY at 14% for best model |
-| Polymarket | "Best Math AI model June?" | Google **58%** | Google leads in math specifically |
-| Polymarket | "Best Coding AI model June?" | Anthropic **91%**, Google trailing | Google not competitive in coding |
-
-**Assessment**: Google is ALREADY not in top 3 for overall AI rankings. The market has priced this in at 14%. Betting on a further decline requires you to bet that Google drops from 14% to near 0% — possible but already mostly realized.
-
-**Best play**: If you believe Google's math dominance (58%) will also erode, look for "Google has best Math AI model by December" — expect this to be created around October.
-
----
-
-### Bet 19: Google Reduces Free Gemini Quotas in 2026
-**Verdict**: ✅ MEDIUM
-
-**Logic**: Compute costs rising + memory expensive = quota reductions. This is standard operating procedure industry-wide. Very likely but **no market exists**.
-
----
-
-### Bet 20: AI Overviews Paused in Large Regions (e.g., Europe) by Dec 31
-**Verdict**: ✅ MEDIUM
-
-**Logic**: EU AI Act compliance (2025 start) + inference compute costs = strong pressure to slow rollout. However, Google has strong incentive to maintain search market share — pausing AI Overviews risks Search revenue.
-
-**Action**: No market found. Skip.
-
----
-
-## SECTION III: Memory Giants Outperform (Bets 21–30)
-
-### Thesis Logic
-Shortage = pricing power = blowout earnings for Micron, SK Hynix, Samsung. This is the most logically coherent section of the entire thesis. **The evidence strongly supports this view, and real markets exist.**
-
----
-
-### Bets 21–23: Micron Gross Margin Beats Analyst Highest Estimate (Q3, Q4, Next Q)
-**Verdict**: ✅ STRONG — BEST BET IN ENTIRE THESIS
-
-| Platform | Market | Current Odds | Direction | Cost | ROI | Edge |
-|----------|--------|-------------|-----------|------|-----|------|
-| Polymarket | Micron Q3 adj gross margin **>85%** | **54% YES** | YES | $0.54 | **85%** | +20–25% |
-| Kalshi | Search "Micron fiscal Q3 gross margin" | TBD | YES | TBD | TBD | — |
-
-**Assessment**: This is the **single highest-conviction bet** with a real market. Market prices 54% probability, but HBM pricing power + mix shift toward premium products implies 70–80%+ probability. That's a **+16–26% edge** with 85% ROI.
-
-**Portfolio allocation**: Large position (15–20% of thesis bankroll)
-
----
-
-### Bets 26–28: Micron Revenue Beats Consensus Each Quarter
-**Verdict**: ✅ STRONG — But Nearly Fully Priced
-
-| Platform | Market | Current Odds | Direction | ROI |
-|----------|--------|-------------|-----------|-----|
-| Polymarket | Micron Q3 DRAM revenue >**$25B** | **96% YES** | YES | **4%** |
-| Polymarket | Micron Q3 NAND revenue >**$7.0B** | **93% YES** | YES | **7.5%** |
-
-**Assessment**: Thesis correct but market has almost fully priced in the win. 4–7.5% ROI is below risk-adjusted threshold unless you have large capital. Capital efficiency is poor here.
-
-**Look instead for**: Higher threshold markets where edge exists. If Micron DRAM >$28B market exists at ~30-40% → much better ROI.
-
-**Portfolio allocation**: Small or skip
-
----
-
-### Bet 24: SK Hynix H2 2026 Operating Profit Record High
-**Verdict**: ✅ STRONG — No Direct Market
-
-SK Hynix holds ~50% of the global HBM market. If the shortage thesis is correct, they are the single biggest beneficiary. Their Q1 2026 operating profit already hit record levels driven by HBM.
-
-| Platform | Market | Direction |
-|----------|--------|-----------|
-| Polymarket | None found | — |
-| Kalshi | None found | — |
-
-**Action**: No direct prediction market. Trade the underlying stock (KRX: 000660) or Korean ADR (OTC: HXSCL).
-
----
-
-### Bet 25: Samsung HBM Fully Qualified by NVIDIA/Google by Dec 31
-**Verdict**: ✅ MEDIUM — Complex
-
-**Logic**: Samsung has historically lagged Hynix in HBM qualification. Their HBM3e failed NVIDIA certification in 2024. If they succeed in 2026, it RELIEVES the shortage (bad for pricing thesis) but VALIDATES the demand surge thesis.
-
-**Assessment**: This is actually a **hedge** against your thesis. If Samsung qualifies → supply increases → memory prices soften → Micron/Hynix margins compress. **Bet YES on Samsung qualification = hedge against thesis weakness.**
-
-**Action**: No market found. This is a dual-use signal: monitor Samsung announcements.
-
----
-
-### Bet 29: Memory Stocks Outperform Logic Chips in SOX Index H2 2026
-**Verdict**: ✅ MEDIUM — No Direct Market
-
-**Logic**: SOX contains both memory (MU) and logic/design (NVDA, AMD, QCOM). If memory prices surge, MU outperforms. However, NVIDIA's dominance means logic chips may still win the index contest.
-
-**Complication**: NVIDIA IS a logic chip designer (no memory manufacturing) but its valuation is driven by AI GPU demand — which correlates WITH memory shortage, not against it. Complex cross-currents.
-
----
-
-### Bet 30: Server DDR5 Contract Prices +40% by Year-End vs Jan 2026
-**Verdict**: ✅ STRONG — No Market
-
-**Logic**: DDR5 is the server memory commodity. Supply-constrained HBM forces hyperscalers to also bid up DDR5 for non-AI workloads. TrendForce and DRAMeXchange report contract prices quarterly.
-
-**Action**: No tradeable market. Use TrendForce DRAM spot price index as leading indicator. If confirmed → validate Section III thesis.
-
----
-
-## SECTION IV: Advanced Packaging & Equipment (Bets 31–40)
-
-### Thesis Logic
-HBM's 3D chip-on-wafer-on-substrate (CoWoS) packaging is the physical bottleneck. More demand for HBM = more demand for bonding equipment (DISCO), EUV for memory (ASML), etch/deposition (Lam, Applied Materials), and inspection (KLA). This is **structurally correct**.
-
-**⚠️ Market Gap**: Almost NO prediction markets exist for this section on Polymarket or Kalshi. These are stock market plays, not prediction market plays.
-
----
-
-### Bets 31–33: ASML Net Bookings Beat for Q3/Q4 2026
-**Verdict**: ✅ STRONG — No Market
-
-**Logic**: Memory manufacturers ordering EUV lithography machines for next-gen DRAM capacity. ASML is the sole EUV supplier. Bookings reflect 18–24 month forward demand. Memory capex surge = ASML bookings surge with lag.
-
-| Platform | Market | Notes |
-|----------|--------|-------|
-| Polymarket | None found | ASML is not commonly traded on Polymarket |
-| Kalshi | Check "ASML earnings" | Possible but needs verification |
-
-**Action**: No prediction market. Consider long ASML stock (NASDAQ: ASML).
-
----
-
-### Bet 34: Applied Materials Advanced Packaging Revenue +30% YoY
-**Verdict**: ✅ STRONG — No Market
-
-AMAT's advanced packaging segment (wafer bonding, TSV etch) is a direct beneficiary. No market exists. Trade underlying (NASDAQ: AMAT).
-
----
-
-### Bet 35: Lam Research or KLA Beats Quarterly Net Income Estimates
-**Verdict**: ✅ STRONG — No Market
-
-LRCX (etch/deposition) and KLAC (process control) are critical for HBM manufacturing. Historically beat estimates during upcycles.
-
----
-
-### Bets 36–38: DISCO or Lasertec (Japan) All-Time High H2 2026
-**Verdict**: ✅ MEDIUM — No Market
-
-Japanese semiconductor equipment stocks rarely appear on Western prediction markets. DISCO (6146.T) makes dicing saws critical for HBM wafer singulation. Strong thesis but no tradeable market.
-
----
-
-### Bet 39: TSMC CoWoS Expansion Ahead of Guidance
-**Verdict**: ✅ STRONG — No Market
-
-TSMC's CoWoS capacity is the most cited bottleneck for HBM on AI accelerators (H100, H200, B100 all use CoWoS). TSMC guided for significant expansion but demand consistently outpaces supply.
-
-**Action**: Monitor TSMC earnings calls (quarterly). If CoWoS expansion announcement > guidance → thesis strongly validated.
-
----
-
-### Bet 40: $5B+ Exclusive Packaging Deal Announced by Dec 31
-**Verdict**: ✅ MEDIUM — No Market
-
-Possible but deal structures of this type are not typically public. Companies sign confidential capacity reservations.
-
----
-
-## SECTION V: AI Unicorn Valuation Stress (Bets 41–50)
-
-### ⚠️ CRITICAL WARNING: SECTION V IS MOST CONTRADICTED BY LIVE DATA
-
-**Live Polymarket data (May 30, 2026)**:
-- Anthropic valuation >$1.1T by Dec 31: **98% YES** — Anthropic is SURGING
-- OpenAI $1T+ in 2026: **83% YES** — Strong
-- AI bubble burst by Dec 2026: **22% YES** — Market doesn't expect bubble pop
-- NVIDIA largest company Dec 2026: **64.5%** — NVIDIA dominant
-
-This section requires the most conviction to trade against the market.
-
----
-
-### Bet 41: OpenAI Valuation Stagnates or Falls Below Previous Round
-**Verdict**: ❌ CONTRADICTED — High-Risk Contrarian Play
-
-| Platform | Market | Current Odds | Direction | Cost | ROI |
-|----------|--------|-------------|-----------|------|-----|
-| Polymarket | OpenAI $1T+ valuation in 2026 | YES **83%** | **NO** (contrarian) | $0.17 | **388%** |
-| Polymarket | Anthropic vs OpenAI higher valuation Dec 31 | Anthropic **81%** | Anthropic YES | $0.81 | 23% |
-
-**Assessment**: Market strongly disagrees. OpenAI's recurring revenue from ChatGPT subscriptions ($1B+/month ARR) makes near-term valuation collapse unlikely. Unless OpenAI suffers a catastrophic product failure or leadership crisis, this bet will lose.
-
-**Position Size**: Tiny (1%) if betting — pure contrarian
-
----
-
-### Bet 42: Anthropic Does NOT Achieve Positive Net Income in 2026
-**Verdict**: ✅ LIKELY TRUE — But No Direct Market
-
-**Logic**: Anthropic is burning ~$2–3B/year in training and inference costs. Their $1.1T valuation is growth-stage, not profit-stage. The market doesn't price profitability — it prices future potential. NO profitable AI lab exists at this scale.
-
-| Platform | Market | Notes |
-|----------|--------|-------|
-| Polymarket | Anthropic bankruptcy: **5.4% YES** | This is different — bankruptcy vs. profitability |
-| Kalshi | None for Anthropic profitability | — |
-
-**Assessment**: The bet is almost certainly TRUE (Anthropic will not be net income positive in 2026) but there's **no market for it**. The bankruptcy market is a different and much weaker signal.
-
-**Action**: No tradeable market currently.
-
----
-
-### Bet 43: AI Unicorn >$1B Valuation Files for Bankruptcy or is Acquired at Discount by Dec 31
-**Verdict**: ✅ MEDIUM — Best Play in Section V
-
-| Platform | Market | Company | Current Odds | Direction | Cost | ROI |
-|----------|--------|---------|-------------|-----------|------|-----|
-| Polymarket | "Which companies announce bankruptcy before 2027?" | **Perplexity AI** | **24%** | YES | $0.24 | **317%** |
-| Polymarket | Same market | **C3.ai** | **15%** | YES | $0.15 | **567%** |
-| Polymarket | Same market | **SoundHound AI** | **7.5%** | YES | $0.075 | **1233%** |
-
-**Assessment**: Perplexity is the most plausible — they rely on expensive API calls and search inference, directly affected by compute cost spikes. C3.ai has had consistent losses and revenue concerns. SoundHound is higher risk but higher reward.
-
-**Note**: This is NOT directly caused by Google's memory shortage — it's more about general AI cost inflation. The causal link is weak but the bet itself has merit independent of the thesis.
-
-**Portfolio allocation**: Medium — spread across Perplexity (largest) + C3.ai (smaller)
-
----
-
-### Bet 44: OpenAI GPT-5 NOT Fully Commercialized for Enterprise by Dec 31
-**Verdict**: ✅ MEDIUM — No Market
-
-**Logic**: "Fully commercialized" is ambiguous. OpenAI will release models, but full enterprise API availability with pricing/SLA could lag. However, OpenAI has strong commercial incentives to ship fast.
-
-**Action**: No market. Resolve: "OpenAI GPT-5 released" markets may appear. Watch Polymarket.
-
----
-
-### Bets 45–47: NVIDIA Market Cap Does NOT Stay Above $4T by Dec 31
-**Verdict**: ❌ STRONGLY CONTRADICTED
-
-**Live data**: NVIDIA is **65% probability** to be the LARGEST COMPANY in the world by Dec 31. Their current market cap is already ~$3.5–4T. The thesis is betting NVIDIA falls significantly.
-
-| Platform | Market | Current Odds | Direction | Cost | ROI |
-|----------|--------|-------------|-----------|------|-----|
-| Polymarket | NVIDIA largest company Dec 2026 | **64.5% YES** | NO (against thesis) | $0.355 | **82%** |
-| Polymarket | NVIDIA largest company end of June | **90.5% YES** | NO (contrarian) | $0.095 | **853%** |
-
-**Thesis contradiction**: The memory shortage actually HELPS NVIDIA — their GPUs (with HBM) are what everyone is scrambling for. NVIDIA is the single biggest winner in a memory-scarce AI infrastructure buildout, not a victim.
-
-**DO NOT BET NO ON NVIDIA unless you believe:**
-1. A competing architecture (e.g., Google TPU, custom chips) makes NVIDIA GPUs obsolete in 2026
-2. US export controls completely shut down NVIDIA's China business
-3. A major recession hits AI capital expenditure
-
-**Position Size: ZERO** (Avoid bets 45–47)
-
----
-
-### Bet 48: SaaS/Software (Salesforce, Workday) Underperforms Hardware H2 2026
-**Verdict**: ✅ MEDIUM — No Direct Market
-
-**Logic**: If AI hardware costs surge, software companies trying to integrate AI pay higher API/inference costs, compressing margins. However, software companies with existing profitable businesses (Salesforce, Workday) can absorb this.
-
-**Action**: No tradeable prediction market. Consider ETF rotation (SOXX vs. IGV) if you have the conviction.
-
----
-
-### Bet 49: Analysts Frequently Cite "AI CapEx ROI Concerns" as Downgrade Rationale in Q3 2026
-**Verdict**: ✅ MEDIUM — Partial Market Exists
-
-| Platform | Market | Current Odds | Direction | Cost | ROI |
-|----------|--------|-------------|-----------|------|-----|
-| Polymarket | "AI bubble burst by...?" | YES **22%** | YES | $0.22 | **355%** |
-
-**Assessment**: The "AI bubble burst" market is the closest proxy. At 22%, the market says there's a ~1-in-5 chance the AI bubble pops by year-end. If the memory shortage cascades into earnings disappointments in Q3, this narrative could accelerate.
-
-**Assessment of edge**: Thesis implies 35–40% probability → +13–18% edge → worth a small position.
-
-**Portfolio allocation**: Small (5%)
-
----
-
-### Bet 50: Alphabet's Probability of Being #1 Company Falls Below 15% by Dec 31
-**Verdict**: ✅ NUANCED — Market Currently Shows 19% (Borderline)
-
-| Platform | Market | Current Odds (Alphabet) | Direction | Note |
-|----------|--------|------------------------|-----------|------|
-| Polymarket | Largest Company end of Dec 2026? | **19%** (above 15%) | Monitor | Currently above the 15% threshold |
-
-**Assessment**: Alphabet is at **19% currently** — just 4 percentage points above the thesis threshold. This market will fluctuate. If Alphabet's Q2 earnings disappoint (CapEx surge, margin compression from memory costs), their probability could drop below 15%.
-
-**Play**: Watch Alphabet's earnings (late July 2026). If they report memory-driven CapEx blow-out AND earnings miss → Alphabet's "largest company" probability drops → that 19% could fall to 10–15% range, validating this bet.
-
-**Action**: Do not bet now (wrong side of threshold). Re-evaluate after Q2 earnings.
-
----
-
-## PORTFOLIO CONSTRUCTION
-
-### Total Position Allocation Framework
-
-| Tier | Description | Bankroll % |
-|------|-------------|-----------|
-| Tier 1 | High conviction, real market, reasonable ROI | 60% |
-| Tier 2 | Strong thesis, no market yet — wait for catalyst | 0% (hold cash) |
-| Tier 3 | Contrarian, high risk/reward | 15% |
-| Tier 4 | DO NOT BET | 0% |
-| Cash reserve | For new markets appearing post-Q2 earnings | 25% |
-
----
-
-### Tier 1 Bets (Execute Now)
-
-| # | Market | Platform | Direction | Price | ROI | Allocation |
-|---|--------|----------|-----------|-------|-----|-----------|
-| 21-23 | Micron Q3 adj gross margin >85% | Polymarket | **YES** | $0.54 | 85% | **25%** |
-| 43a | Perplexity AI bankruptcy before 2027 | Polymarket | **YES** | $0.24 | 317% | **15%** |
-| 43b | C3.ai bankruptcy before 2027 | Polymarket | **YES** | $0.15 | 567% | **5%** |
-| — | Broadcom Q2 AI revenue >$11.0B | Polymarket | **YES** | $0.51 | 96% | **10%** |
-| — | NVIDIA largest company Dec 2026 | Polymarket | **YES** | $0.645 | 55% | **5%** |
-
-### Tier 3 Bets (Speculative — Small Size)
-
-| # | Market | Platform | Direction | Price | ROI | Allocation |
-|---|--------|----------|-----------|-------|-----|-----------|
-| 49 | AI bubble burst by Dec 2026 | Polymarket | **YES** | $0.22 | 355% | 5% |
-| 11 | Gemini flagship NOT by June 30 | Polymarket | **NO** | $0.12 | 633% | 2% |
-| 41 | OpenAI NOT $1T+ in 2026 | Polymarket | **NO** | $0.17 | 388% | 3% |
-| 43c | SoundHound bankruptcy | Polymarket | **YES** | $0.075 | 1233% | 1% (lottery) |
-| 50 | Alphabet drops below 15% end of year | Polymarket | Re-evaluate after Q2 | — | — | 4% (hold) |
-
----
-
-## KEY RISKS TO ENTIRE THESIS
-
-1. **Samsung HBM qualification success**: If Samsung passes NVIDIA/Google's HBM3e tests, supply increases significantly → prices soften → Micron/Hynix margins compress → Sections I, III, IV lose validity
-2. **Google self-supply via TPUs**: Google's TPU v6+ uses custom memory configurations that partially bypass HBM supply chains; shortage may affect GPT-style workloads more than Google's own infrastructure
-3. **AI inference efficiency (distilled models)**: 2026 trend is small distilled models (Gemini Flash, GPT-4o mini) requiring far less HBM per query → reduces memory demand per unit of output
-4. **Anthropic & OpenAI success = shortage isn't killing them**: Both companies are RISING, not falling, despite compute costs. The "shortage kills unicorns" thesis is contradicted by live data
-5. **Macro recession / AI investment pullback**: Would compress NVIDIA, memory demand, AND validate Section V bets — but for the wrong reasons
-
----
-
-## KALSHI LIVE MARKETS (Fetched via Authenticated API — May 30, 2026)
-
-51 live markets found across thesis-relevant series. Data via `api.elections.kalshi.com`.
-
-### AI Coding Model Race (KXCODINGMODEL, closes Dec 31 2026)
-
-| Ticker | Outcome | YES | NO | ROI if YES |
-|--------|---------|-----|----|-----------|
-| KXCODINGMODEL-26DEC-ANTH | Anthropic has best coding model | $0.56 | $0.46 | 79% |
-| KXCODINGMODEL-26DEC-OPEN | OpenAI has best coding model | $0.27 | $0.74 | 270% |
-| KXCODINGMODEL-26DEC-GOOG | Google has best coding model | $0.06 | $0.95 | 1567% |
-| KXCODINGMODEL-26DEC-XAI | xAI has best coding model | $0.10 | $0.94 | 900% |
-| KXCODINGMODEL-26DEC-DEEP | Deepseek has best coding model | $0.01 | $1.00 | 9900% |
-| KXCODINGMODEL-26DEC-MOON | Moonshot AI has best coding model | $0.02 | $1.00 | 4900% |
-
-*Thesis link: Google memory constraints → model quality lags → lower probability for GOOG.*
-
-### OpenAI IPO Timeline (KXIPOOPENAI)
-
-| Ticker | Outcome | YES | NO | ROI if YES |
-|--------|---------|-----|----|-----------|
-| KXIPOOPENAI-26OCT01 | OpenAI IPOs by Oct 1 2026 | $0.59 | $0.42 | 69% |
-| KXIPOOPENAI-26NOV01 | OpenAI IPOs by Nov 1 2026 | $0.76 | $0.27 | 32% |
-| KXIPOOPENAI-26DEC01 | OpenAI IPOs by Dec 1 2026 | $0.82 | $0.21 | 22% |
-| KXIPOOPENAI-27JAN01 | OpenAI IPOs by Jan 1 2027 | $0.87 | $0.15 | 15% |
-| KXIPOOPENAI-27FEB01 | OpenAI IPOs by Feb 1 2027 | $0.91 | $0.16 | 10% |
-| KXIPOOPENAI-27MAR01 | OpenAI IPOs by Mar 1 2027 | $0.94 | $0.14 | 6% |
-| KXIPOOPENAI-27APR01 | OpenAI IPOs by Apr 1 2027 | $0.95 | $0.09 | 5% |
-| KXIPOOPENAI-27JUN01 | OpenAI IPOs by Jun 1 2027 | $0.95 | $0.08 | 5% |
-
-*Consensus: ~87% chance IPO by Jan 2027. Memory cost pressure could delay/depress valuation.*
-
-### Top-Ranked AI Model by 2027 (KXTOPAI-27-JAN01)
-
-| Ticker | Outcome | YES | NO | ROI if YES |
-|--------|---------|-----|----|-----------|
-| KXTOPAI-27-JAN01-OPEN | OpenAI top-ranked before 2027 | $0.51 | $0.50 | 96% |
-| KXTOPAI-27-JAN01-XAI | xAI top-ranked before 2027 | $0.24 | $0.81 | 317% |
-| KXTOPAI-27-JAN01-META | Meta top-ranked before 2027 | $0.23 | $0.80 | 335% |
-| KXTOPAI-27-JAN01-DEPP | Deepseek top-ranked before 2027 | $0.14 | $0.90 | 614% |
-| KXTOPAI-27-JAN01-BYTE | ByteDance top-ranked before 2027 | $0.13 | $0.96 | 669% |
-| KXTOPAI-27-JAN01-NVID | Nvidia top-ranked before 2027 | $0.09 | $0.93 | 1011% |
-
-### OpenAI vs Anthropic IPO Race (KXOAIANTH)
-
-| Ticker | Outcome | YES | NO | ROI if YES |
-|--------|---------|-----|----|-----------|
+| Ticker | Outcome | YES | NO | ROI |
+|--------|---------|-----|----|-----|
 | KXOAIANTH-40-OAI | OpenAI IPOs before Anthropic | $0.79 | $0.26 | 27% |
 | KXOAIANTH-40-ANTH | Anthropic IPOs before OpenAI | $0.29 | $0.74 | 245% |
 
-### Anthropic DoD Lawsuit (KXANTHROPICDOD)
+**Analysis**: The market gives a 79% chance OpenAI IPOs first. This aligns with OpenAI's larger scale and near-term IPO timeline (see Section II). Anthropic at 29% is the underdog — but a well-funded one with Amazon backing ($4B+ committed). If memory cost inflation accelerates and hurts OpenAI's margin story more than Anthropic's (Anthropic runs on AWS TPUs, bypassing some HBM supply chain), Anthropic's IPO story could improve.
 
-| Ticker | Outcome | YES | NO | ROI if YES |
-|--------|---------|-----|----|-----------|
-| KXANTHROPICDOD-28 | Anthropic wins Pentagon lawsuit | $0.52 | $0.51 | 92% |
+The 2040 close date makes this a very long-dated bet. Capital is locked up. ROI should be heavily discounted for time value.
 
-### NVIDIA H200 to China (KXH200CHINA)
-
-| Ticker | Outcome | YES | NO | ROI if YES |
-|--------|---------|-----|----|-----------|
-| KXH200CHINA-27-BEF | H200 chips delivered to China before 2027 | $0.86 | $0.20 | 16% |
-
-*Thesis link: China H200 access → more HBM demand → tighter supply globally → memory price spike.*
-
-### Broadcom Earnings Mentions (KXEARNINGSMENTIONAVGO-26JUN03, closes Sep 30 2026)
-
-| Ticker | What Broadcom mentions on earnings call | YES | ROI |
-|--------|----------------------------------------|-----|-----|
-| KXEARNINGSMENTIONAVGO-26JUN03-HYPE | "Hyperscaler" mentioned | $0.93 | 8% |
-| KXEARNINGSMENTIONAVGO-26JUN03-TOMA | "TomasBravo" mentioned | $0.83 | 20% |
-| KXEARNINGSMENTIONAVGO-26JUN03-ANTH | "Anthropic" mentioned | $0.80 | 25% |
-| KXEARNINGSMENTIONAVGO-26JUN03-OPENA | "OpenAI" mentioned | $0.77 | 30% |
-| KXEARNINGSMENTIONAVGO-26JUN03-META | "Meta" mentioned | $0.77 | 30% |
-| KXEARNINGSMENTIONAVGO-26JUN03-COMP | "Competition/competitive" mentioned | $0.51 | 96% |
-| KXEARNINGSMENTIONAVGO-26JUN03-ACQU | "Acquisition" mentioned | $0.37 | 170% |
-| KXEARNINGSMENTIONAVGO-26JUN03-OPTI | "Optical" mentioned | $0.34 | 194% |
-| KXEARNINGSMENTIONAVGO-26JUN03-ORGA | "Organic growth" mentioned | $0.34 | 194% |
-| KXEARNINGSMENTIONAVGO-26JUN03-OPEN | "Open source" mentioned | $0.28 | 257% |
-| KXEARNINGSMENTIONAVGO-26JUN03-QUAN | "Quantum" mentioned | $0.26 | 285% |
-| KXEARNINGSMENTIONAVGO-26JUN03-DEPA | "DOGE/Department" mentioned | $0.27 | 270% |
-| KXEARNINGSMENTIONAVGO-26JUN03-NVLI | "NVLink" mentioned | $0.30 | 233% |
-
-*Thesis link: Broadcom is a direct HBM/AI infrastructure beneficiary. "Hyperscaler" mention near-certain (93%); look for "optical" (34%) as a contrarian signal for memory alternatives.*
-
-### Thesis-Mapped Kalshi Opportunities
-
-| Bet Group | Best Kalshi Play | YES Price | ROI | Thesis Alignment |
-|-----------|-----------------|-----------|-----|-----------------|
-| I (Google CapEx) | KXEARNINGSMENTIONAVGO-26JUN03-HYPE | $0.93 | 8% | Hyperscalers = memory demand surge |
-| II (AI Delays) | KXCODINGMODEL-26DEC-GOOG | $0.06 | 1567% | Google model lags → low coding market share |
-| III (Memory stocks) | KXH200CHINA-27-BEF | $0.86 | 16% | H200 to China → HBM demand spike |
-| IV (Packaging) | KXEARNINGSMENTIONAVGO-26JUN03-NVLI | $0.30 | 233% | NVLink = advanced packaging signal |
-| V (Unicorn stress) | KXANTHROPICDOD-28 | $0.52 | 92% | DoD revenue = Anthropic stays private |
+**Recommended bets**:
+- **Skip** — 2040 horizon ties up capital for too long at thin ROI (27% for OAI, 245% for ANTH but with 14-year duration)
+- If you have long-horizon capital: **YES ANTH** at $0.29 is the thesis-aligned contrarian play (245% ROI, Anthropic as compute-efficient underdog)
 
 ---
 
-## QUICK REFERENCE SCORECARD
+## Section V: Anthropic DoD Lawsuit
 
-| Bet Group | Logic | Market Exists | Market Supports Thesis | Action |
-|-----------|-------|---------------|----------------------|--------|
-| I (CapEx 1-10) | ✅ Strong | ❌ No | N/A | Wait for market post-earnings |
-| II (Delays 11-20) | ⚠️ Weak | ✅ Partial | ❌ Contradicted | Mostly avoid; tiny contrarian |
-| III (Memory 21-30) | ✅ Strongest | ✅ Yes | ✅ Supported | Execute — esp. GM>85% |
-| IV (Packaging 31-40) | ✅ Strong | ❌ No | N/A | Trade stocks directly |
-| V (Unicorns 41-50) | ❌ Mostly Contradicted | ✅ Partial | ❌ Contradicted | Selective only (Perplexity) |
+**Series**: `KXANTHROPICDOD` | **Closes**: Jan 1, 2028
+
+| Ticker | Outcome | YES | NO | ROI |
+|--------|---------|-----|----|-----|
+| KXANTHROPICDOD-28 | Anthropic wins the lawsuit | $0.52 | $0.51 | 92% |
+
+**Thesis link**: The Department of War (DoD) lawsuit against Anthropic relates to Anthropic PBC's corporate structure and its obligations to the government. If Anthropic loses, it faces potential restructuring or revenue restrictions — reducing its ability to fund compute at current rates. A win preserves Anthropic's independent capital structure and continued AI model investment.
+
+**Analysis**: At $0.52, this is essentially a coin flip. The market has no strong view. The legal merits depend on specific PBC charter language and DoD contract terms — not directly linked to the memory thesis.
+
+**Recommended bet**: **YES** at $0.52 — 92% ROI if Anthropic wins, essentially even-money with potentially favorable legal setup. Small position only given uncertainty. Not a thesis-core bet.
 
 ---
 
-*Data sourced from live Polymarket and Kalshi markets (May 30, 2026) via authenticated APIs. 51 Kalshi markets fetched from api.elections.kalshi.com. This is analysis only, not financial advice.*
+## Section VI: NVIDIA H200 to China
+
+**Series**: `KXH200CHINA` | **Closes**: Jan 1, 2027
+
+| Ticker | Outcome | YES | NO | ROI |
+|--------|---------|-----|----|-----|
+| KXH200CHINA-27-BEF | NVIDIA H200 confirmed delivered to mainland China | $0.86 | $0.20 | 16% |
+
+**Thesis link**: If NVIDIA H200 chips (which use HBM3e stacked via CoWoS) reach China, it significantly amplifies global HBM demand. Chinese hyperscalers (Alibaba, Baidu, ByteDance, Tencent) would compete for HBM-equipped GPUs, tightening the already-constrained supply chain and strengthening the memory pricing thesis.
+
+**Analysis**: At 86%, the market considers H200 delivery to China near-certain — likely reflecting confirmed reports of export license workarounds or prior shipments before updated restrictions. ROI is only 16%.
+
+**Recommended bet**: **Skip** — ROI too thin at 16% for a near-certain outcome. Better to use this as thesis validation (if H200 is going to China → HBM demand exceeds even bullish forecasts → Micron/Hynix positions, not Kalshi bets).
+
+---
+
+## Section VII: Broadcom Earnings Mentions
+
+**Series**: `KXEARNINGSMENTIONAVGO-26JUN03` | **Closes**: Sep 30, 2026
+**Question**: What will Broadcom Inc. mention during their Q2 2026 earnings call?
+
+**Thesis link**: Broadcom is a direct HBM/AI infrastructure beneficiary — their custom ASICs (XPUs) for Google TPUs use CoWoS packaging. What Broadcom emphasizes on earnings calls reveals the real state of AI infrastructure demand, memory appetite, and hyperscaler spending.
+
+**Market data** (sorted by YES price, descending):
+
+| Ticker | Keyword | YES | ROI | Signal |
+|--------|---------|-----|-----|--------|
+| KXEARNINGSMENTIONAVGO-26JUN03-HYPE | "Hyperscaler" | $0.93 | 8% | Near-certain — baseline demand confirmation |
+| KXEARNINGSMENTIONAVGO-26JUN03-TOMA | "TomasBravo" | $0.83 | 20% | High — PE firm connection |
+| KXEARNINGSMENTIONAVGO-26JUN03-ANTH | "Anthropic" | $0.80 | 25% | High — Broadcom supplies Anthropic infra |
+| KXEARNINGSMENTIONAVGO-26JUN03-OPENA | "OpenAI" | $0.77 | 30% | High — major Broadcom customer |
+| KXEARNINGSMENTIONAVGO-26JUN03-META | "Meta" | $0.77 | 30% | High — Meta uses Broadcom network chips |
+| KXEARNINGSMENTIONAVGO-26JUN03-COMP | "Competition/competitive" | $0.51 | 96% | Medium — earnings calls vary |
+| KXEARNINGSMENTIONAVGO-26JUN03-ACQU | "Acquisition" | $0.37 | 170% | Medium — Broadcom is acquisitive |
+| KXEARNINGSMENTIONAVGO-26JUN03-OPTI | "Optical" | $0.34 | 194% | Medium — optical interconnects are a 2026 theme |
+| KXEARNINGSMENTIONAVGO-26JUN03-ORGA | "Organic growth" | $0.34 | 194% | Medium |
+| KXEARNINGSMENTIONAVGO-26JUN03-NVLI | "NVLink" | $0.30 | 233% | Medium — competitor tech but often mentioned |
+| KXEARNINGSMENTIONAVGO-26JUN03-OPEN | "Open source" | $0.28 | 257% | Medium |
+| KXEARNINGSMENTIONAVGO-26JUN03-DEPA | "DOGE/Department" | $0.27 | 270% | Low-medium — gov context varies |
+| KXEARNINGSMENTIONAVGO-26JUN03-QUAN | "Quantum" | $0.26 | 285% | Low — not Broadcom's focus |
+
+**Analysis**:
+
+The high-probability mentions (Hyperscaler 93%, Anthropic 80%, OpenAI 77%) are near-certainties but offer thin ROI. The thesis-interesting plays are in the middle tier:
+
+- **"Optical" (34%)**: Optical interconnects are increasingly cited as the solution to bandwidth bottlenecks between HBM and AI accelerators. If Broadcom mentions optical, it signals the memory/bandwidth constraint is becoming an engineering priority — direct thesis validation.
+- **"NVLink" (30%)**: Broadcom mentioning a competitor's interconnect standard signals how pervasive the AI infrastructure conversation is — they'd only mention NVLink to contrast it with their own solutions.
+- **"Quantum" (26%)**: Lowest credibility mention — Broadcom doesn't have a quantum compute product. Would signal a kitchen-sink earnings call.
+
+**Recommended bets**:
+- **YES HYPE** at $0.93 — 8% ROI but near-certain thesis validator. Good for anchoring position.
+- **YES OPTI** at $0.34 — 194% ROI, high thesis relevance if optical interconnects are a bottleneck solution Broadcom discusses.
+- **YES NVLI** at $0.30 — 233% ROI, interesting as a competitive signal.
+- **YES COMP** at $0.51 — 96% ROI, essentially a coinflip on whether Broadcom discusses competitive dynamics.
+
+---
+
+## Thesis Gap Analysis
+
+The following thesis bets have **no current Kalshi market**. These require either waiting for new markets or trading the underlying securities directly.
+
+| Thesis Bet | Why No Kalshi Market | Alternative Action |
+|------------|---------------------|-------------------|
+| Alphabet Q2/Q3/Q4 CapEx beat | Kalshi doesn't cover Google CapEx thresholds | Monitor Kalshi post-earnings; check Polymarket |
+| Micron Q3 gross margin >85% | No Kalshi market for Micron earnings | Stock (MU) or Polymarket if listed |
+| SK Hynix H2 operating profit record | Korean company, rarely on US prediction markets | Stock: KRX 000660 / OTC HXSCL |
+| Samsung HBM qualification | No market for supply-side events | Monitor NVIDIA/Samsung press releases |
+| ASML net bookings beat | No market | Stock: ASML on NASDAQ |
+| DDR5 contract prices +40% YoY | No market | Track DRAMeXchange/TrendForce monthly |
+| TSMC CoWoS ahead of guidance | No market | Monitor TSMC quarterly earnings |
+| Lam/KLA beats estimates | No market | Stocks: LRCX, KLAC |
+
+**Bottom line**: Kalshi's available markets address the **downstream consequences** of the thesis (AI model race outcomes, unicorn corporate events) but not the **upstream causes** (memory pricing, CapEx data, equipment orders). For the core thesis validation trades, the relevant instruments are equities and futures, not Kalshi contracts.
+
+---
+
+## Portfolio Construction (Kalshi Only)
+
+### Tier 1 — High Conviction (Execute Now)
+
+| Market | Direction | Price | ROI | Allocation | Rationale |
+|--------|-----------|-------|-----|-----------|-----------|
+| KXCODINGMODEL-26DEC-ANTH | YES | $0.56 | 79% | 25% | Anthropic leads coding; memory thesis supports Anthropic advantage over Google |
+| KXTOPAI-27-JAN01-OPEN | YES | $0.51 | 96% | 20% | OpenAI most likely to hold top AI rank; Google not even listed as option |
+| KXEARNINGSMENTIONAVGO-26JUN03-OPTI | YES | $0.34 | 194% | 10% | Optical interconnects = bandwidth bottleneck solution; thesis-aligned signal |
+| KXEARNINGSMENTIONAVGO-26JUN03-HYPE | YES | $0.93 | 8% | 5% | Near-certain thesis validation at each Broadcom earnings call |
+
+### Tier 2 — Speculative (Small Size)
+
+| Market | Direction | Price | ROI | Allocation | Rationale |
+|--------|-----------|-------|-----|-----------|-----------|
+| KXCODINGMODEL-26DEC-OPEN | YES | $0.27 | 270% | 8% | OpenAI as runner-up or winner if they release coding-focused flagship |
+| KXEARNINGSMENTIONAVGO-26JUN03-NVLI | YES | $0.30 | 233% | 5% | NVLink mention = advanced packaging in the spotlight |
+| KXANTHROPICDOD-28 | YES | $0.52 | 92% | 5% | Coin-flip, but Anthropic win = continued independent compute investment |
+| KXIPOOPENAI-26OCT01 | NO | $0.41 | 140% | 5% | IPO more likely Q4 than Q3; NO pays if IPO slips past Oct 1 |
+| KXTOPAI-27-JAN01-XAI | YES | $0.24 | 317% | 3% | xAI dark horse; Grok 3 could challenge OpenAI if training compute is unlocked |
+
+### Cash Reserve
+
+| Allocation | Purpose |
+|-----------|---------|
+| 14% | New Kalshi markets post-Alphabet Q2 earnings (late July 2026) |
+| — | New Kalshi markets post-Broadcom Q2 earnings (Sep 2026) |
+
+### Allocation Summary
+
+| Tier | Markets | Bankroll % |
+|------|---------|-----------|
+| Tier 1 | 4 positions | 60% |
+| Tier 2 | 5 positions | 26% |
+| Cash reserve | — | 14% |
+
+---
+
+## Key Risks to the Thesis
+
+1. **Samsung HBM qualification**: If Samsung passes NVIDIA/Google's HBM3e qualification, supply increases sharply → prices soften → memory thesis collapses. Monitor Samsung quarterly results.
+
+2. **Distilled/small models reduce HBM demand**: The trend toward small distilled models (Gemini Flash, GPT-4o mini) requires far less HBM per query. If this accelerates, per-unit memory demand drops even as AI queries grow.
+
+3. **Google self-supply via TPUs**: Google's TPU v6+ uses custom memory configurations that partially bypass third-party HBM supply chains. Shortage may hit GPU-based workloads (OpenAI, xAI) more than Google's own infrastructure.
+
+4. **OpenAI/Anthropic success despite thesis**: Both companies are growing in market share. If they succeed despite compute costs, Section V (unicorn stress) is wrong — which is consistent with Section III and IV being right (memory demand stays elevated, Micron wins).
+
+5. **Export control reversal**: If US-China chip restrictions ease, NVIDIA H200/B200 flows to China → HBM demand spikes globally → actually strengthens thesis, but Kalshi's KXH200CHINA-27-BEF (already 86%) has low remaining upside.
+
+---
+
+## Quick Reference Scorecard
+
+| Thesis Area | Kalshi Markets Exist? | Market Agrees With Thesis? | Best Kalshi Play |
+|------------|----------------------|--------------------------|-----------------|
+| Google CapEx surge | No | N/A — no market | Wait for post-earnings markets |
+| Google model quality lags | Yes (KXCODINGMODEL) | Yes — Google at 6% | YES ANTH ($0.56, 79% ROI) |
+| Memory suppliers win | No | N/A | Trade MU/HXSCL stocks |
+| Advanced packaging bottleneck | No | N/A | Trade AMAT/LRCX stocks |
+| AI unicorn stress | Partial (IPO markets) | Mostly no — both are rising | NO on KXIPOOPENAI-26OCT01 |
+| HBM demand amplification (China) | Yes (KXH200CHINA) | Yes — 86% priced in | Skip (too thin) |
+| Broadcom AI demand signal | Yes (KXEARNINGSMENTIONAVGO) | Yes — hyperscalers 93% | YES OPTI ($0.34, 194% ROI) |
+
+---
+
+*Data sourced from live Kalshi markets (May 30, 2026) via authenticated API at api.elections.kalshi.com. 51 markets fetched. This is analysis only, not financial advice.*
